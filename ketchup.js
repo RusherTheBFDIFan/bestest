@@ -1,5 +1,8 @@
 img = "";
 status1 = "";
+results = [];
+array = [];
+results = objects.results;
 
 function setup(){
     canvas = createCanvas(640, 420);
@@ -24,7 +27,7 @@ function gotResult(error, results){
 }
 
 function preload(){
-    img = loadImage("1978250.jpeg");
+    img = loadImage("ketchup.jpeg");
 }
 
 function draw(){
@@ -34,4 +37,8 @@ function draw(){
     noFill();
     stroke("#007FFF");
     rect(200, 25, 250, 375);
+}
+
+if (model != ""){
+    
 }
